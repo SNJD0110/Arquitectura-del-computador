@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[a4paper,top=2.54cm,bottom=2,54cm,left=2.54cm,right=2.54cm,marginparwidth=2.54cm]{geometry}
+
+\title{Registros e instrucciones de MIPS}
+\author{Sergio José Noguera Díaz}
+
+\begin{document}
+\maketitle
+\paragraph{Nombres de Instrucciones}
+\begin{itemize}
+\item Registro \$zero(número 0):
+Se utiliza para designar el valor constante cero.
+\item Registro \$at(número 1):
+Se utiliza para designar un ensamblador temporal e decir un espacio de almacenamiento de datos para una o mas instrucciones que se descartan al finalizar la misma.
+\item Registro \$vo-\$v1 (número 2-3):
+Son usados para valores de una función y evacuación de expresiones.
+\item Registro \$a0-\$a3 (número 4-7):
+Son usados para guardar argumentos.
+\item Registro \$t0-\$t7 (número 8-15):
+Son usados para valores temporales.
+\item Registro \$s0-\$s7 (número 16-23):
+Son usados para valores temporales que se eliminan cuando ya no son necesarios.
+\item Registro \$t8-\$t9 (número 24-25):
+Son usados para valores temporales.
+\item Registro \$k0-\$k1 (número 26-27):
+Son reservados para operaciones en el núcleo del sistema operativo. 
+\item Registro \$gp (número 28):
+Se utiliza como puntero global.
+\item Registro \$sp (número 29):
+Se utiliza como puntero de pilas.
+\item Registro \$fp (número 30)
+Se utiliza como putero de marcos.
+\item Registro \$ra (número 31):
+Se utiliza para retornar a la dirección. 
+\end{itemize}
+
+\paragraph{Repertorio de Instrucciones según su nombre mnemotécnico}
+\begin{itemize}
+    \item add(Suma)
+    \item addi(Suma inmediata)
+    \item addiu(Suma inmediata sin signo)
+    \item addu(Suma sin signo)
+    \item and(Operador logico and)
+    \item andi(Operador logico and inmediato)
+    \item beq(Saltar si igual)
+    \item bne(Saltar si disintos)
+    \item j(Salto incondicional)
+        \item jal(Saltar y enlazar)
+    \item jr(Saltar con registro)
+    \item lbu(Carga un byte sin signo)
+    \item lhu(Carga media palabra sin signo)
+    \item ll(Carga enlazada)
+    \item lui(Carga superior inmediata)
+    \item lw(Cargar una palabra)
+    \item nor(Operador logico Nor)
+    \item or(Operador logico or)
+    \item ori(Operador logico  or inmediato)
+    \item slti(Fiar si menor que)
+    \item sltu(Fijar si menor que inmediato)
+    \item sltiu(Fijar si menor inmediato sin signo)
+    \item sll(Desplazamiento lógico a la izquierda)
+    \item srl(Para hacer un desplazamiento lógico a la derecha)
+    \item sb(Almacenamiento de un byte)
+    \item sc(Almacenamiento condicional)
+    \item sh(Almacenamiento de media palabra)
+    \item sw(Almacenamiento de una palabra)
+    \item sub(Resta)
+    \item subu(Resta sin signo)
+    \item bclt(Saltar si FP cierto)
+    \item bclf(Salta si FP falso)
+    \item div(División)
+    \item divu(División sin signo)
+    \item add.s(Suma FP simple)
+    \item add.d(Sumar valores FP doble)
+    \item c.x.s*(Comparación FP simple)
+    \item d.x.d*(Comparación FP doble)
+    \item div.s(División FP simple)
+    \item div.d(Dividir FP doble)
+    \item mul.s(Multiplicación FP simple)
+    \item mul.d(Multiplicación FP doble)
+    \item sub.s(Resta FP simple)
+    \item sub.d(Resta FP doble)
+    \item lwcl(Cargar FP simple)
+    \item ldcl(Carga FP doble)
+    \item mfhi(Mover de parte alta)
+    \item mflo(Mover de parte baja)
+    \item mfc0(Mover de control)
+    \item mult(Multiplicación)
+    \item multu(Multiplicación sin signo)
+    \item sra(Desplazamiento aritmético a la derecha)
+    \item swcl(Almacenamiento de FP simple)
+    \item sdcl(Almacenamiento de FP doble)
+\end{itemize}
+\paragraph{Repertorio de pseudoinstrucciones según su nombre mnemotécnico}
+\begin{itemize}
+    \item blt(Salto si menor que)
+    \item bgt(Salto si mayor que)
+    \item ble(Salto si menor que o igual)
+    \item bge(Salto si mayor que o igual)
+    \item li(Carga inmediata)
+    \item move(Mover)
+\end{itemize}
+
+\end{document}
