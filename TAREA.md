@@ -1,4 +1,10 @@
 # Arquitectura-del-computador
+
+
+
+
+
+
 Programa en MARS
 .data          # Crear un segmento de datos
     mensaje: .asciiz "Hola mundo.\n"  # Imprimir string, .asciiz agrega un terminador nulo
