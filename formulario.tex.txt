@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[a4paper,top=2.54cm,bottom=2,54cm,left=2.54cm,right=2.54cm,marginparwidth=2.54cm]{geometry}
+\title{Formulario del capitulo 1}
+\author{Sergio José Noguera Díaz}
+
+\begin{document}
+\maketitle
+\begin{itemize}
+\item Formula de prestaciones:
+\begin{equation}
+Prestaciones_X= \frac{1}{\text{Tiempo de ejecución X}}
+\end{equation}
+\item Formula de prestaciones relativas:
+\begin{equation}
+\frac{Prestaciones_A}{Prestaciones_B}= \frac{Tiempo de ejecución_B}{Tiempo de ejecución_A}=n
+\end{equation}
+\item Formulas de tiempo de ejecución para el programa:
+\begin{equation}
+    \text{Tiempo de ejecución de la CPU} = \text{Ciclos de reloj de la CPU para el programa} \times \text{Tiempo del ciclo del reloj}
+\end{equation}
+\begin{equation}
+    \text{Tiempo de ejecución de la CPU para un programa} = \frac{\text{Ciclos de reloj de la CPU para el programa}}{\text{Frecuencia de reloj}}
+\end{equation}
+\item Formula para la mejora de prestaciones:
+\begin{equation}
+    \text{Tiempo de CPU A} = \frac{\text{ Ciclos de reloj de CPU A}}{\text{Frecuencia de reloj A}}
+\end{equation}
+\item Formula para las prestaciones de las instrucciones:
+\begin{equation}
+    \text{ Ciclos de reloj de CPU} = \text{Instrucciones de un programa} \times \text{Media de ciclos por instrucción}
+\end{equation}
+\item La ecuación básica de las prestaciones en términos del número de instrucciones, del CPI y del tiempo de ciclo:
+\begin{equation}
+    \text{Tiempo de ejecución} = \text{Número de instrucciones} \times \text{CPI}\times \text{Tiempo de ciclo}
+\end{equation}
+\text{o bien, dado que la frecuencia es el inverso del tiempo de ciclo:}
+\begin{equation}
+    \text{Tiempo de ejecución} =\frac{\text{Número de instrucciones} \times \text{CPI}}{\text{Frecuencia de reloj}}
+\end{equation}
+\item Formula para calcular CPI:
+\begin{equation}
+    \text{CPI} = \frac{\text{  Ciclos de reloj de la CPU}}{\text{Número de instrucciones}}
+\end{equation}
+\item Formula para calcular CPI:
+\begin{equation}
+    \text{tiempo} =\frac{\text{Segundos}}{\text{Programa}} =\frac{\text{ Instrucciones}}{\text{Programa}} \times \frac{\text{Ciclos de reloj}}{\text{Instrucción}} \times \frac{\text{Segundos}}{\text{Ciclos de reloj}}
+\end{equation}
+
+\end{itemize}
+
+\end{document}

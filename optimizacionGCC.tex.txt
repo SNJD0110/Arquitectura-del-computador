@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[a4paper,top=2.54cm,bottom=2,54cm,left=2.54cm,right=2.54cm,marginparwidth=2.54cm]{geometry}
+\title{Opciones de Optimización de GCC}
+\author{Sergio José Noguera Díaz}
+
+\begin{document}
+
+\maketitle
+
+Las opciones de optimización de GCC son un conjunto de banderas que se le pasan al compilador para indicarle cómo debe intentar mejorar el rendimiento o el tamaño del código generado. Estas optimizaciones pueden incluir técnicas como:
+\begin{itemize}
+    \item \textbf{Eliminación de subexpresiones comunes:} Evitar recalcular valores que ya han sido calculados.
+    \item \textbf{Desenrollado de bucles :} Duplicar el cuerpo de un bucle para reducir la sobrecarga de las iteraciones.
+    \item \textbf{Inlining de funciones:} Reemplazar una llamada a una función con el código de la función directamente, eliminando la sobrecarga de la llamada.
+    \item \textbf{Programación de instrucciones:} Reordenar las instrucciones para que se ejecuten de manera más eficiente en el procesador.
+    \item \textbf{Vectorización:} Utilizar instrucciones vectoriales (SIMD) para realizar operaciones en múltiples datos simultáneamente.
+\end{itemize}
+
+\paragraph{Niveles de Optimización}
+\paragraph{GCC ofrece varios niveles de optimización predefinidos que agrupan un conjunto de banderas de optimización individuales. Los más comunes son:}
+
+
+\paragraph{-O0 (Sin optimización):Es el nivel predeterminado. El compilador no realiza ninguna optimización.}
+
+\paragraph{-O1 (Optimización básica):Habilita un conjunto de optimizaciones básicas que no implican un compromiso significativo entre el tamaño del código y la velocidad.}
+
+\paragraph{-O2 (Optimización equilibrada/recomendada):Este es un nivel de optimización más agresivo que -O1. Habilita más optimizaciones que mejoran significativamente el rendimiento del código.}
+
+\paragraph{-O3 (Optimización agresiva/máximo rendimiento):Habilita las optimizaciones más agresivas que pueden mejorar aún más el rendimiento, incluyendo vectorización, inlining de funciones más agresivo y desenrollado de bucles.}
+
+\paragraph{-Os (Optimizar para tamaño):Este nivel de optimización se enfoca en reducir el tamaño del código generado, incluso si eso significa sacrificar un poco de rendimiento.}
+
+\paragraph{-Og (Optimizar para depuración):Introduce optimizaciones que no interfieren con la capacidad de depurar el código.}
+
+\paragraph{-Ofast:Es el nivel más agresivo, equivalente a -O3 más algunas opciones que rompen la estricta adherencia a los estándares de punto flotante.}
+
+
+
+
+\end{document}
