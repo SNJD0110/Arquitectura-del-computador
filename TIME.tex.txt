@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[a4paper,top=2.54cm,bottom=2,54cm,left=2.54cm,right=2.54cm,marginparwidth=2.54cm]{geometry}
+\title{Tiempos del comando time}
+\author{Sergio José Noguera Díaz}
+
+\begin{document}
+
+\maketitle
+
+Aquí se explican los tres tipos de tiempo que se pueden obtener al ejecutar un programa con el comando time:
+
+\subsection*{Tiempo Real}
+Es el tiempo transcurrido desde que el comando iniciado por el usuario comenzó su ejecución hasta que terminó. Es decir, el tiempo que tarda el programa en dar una salida.
+
+\subsection*{Tiempo de Usuario}
+Es la cantidad de tiempo de CPU que el programa pasó ejecutando su propio código. Es decir, el tiempo que se dedicó a ejecutar las instrucciones del programa en sí mismo.
+
+\subsection*{Tiempo del Sistema}
+Es la cantidad de tiempo de CPU que el programa pasó ejecutando llamadas al sistema operativo en nombre del programa. Por ejemplo, cuando se asigna parte de la memoria para realizar alguna tarea del programa.
+
+\end{document}
+
+
+
+
+\end{document}
